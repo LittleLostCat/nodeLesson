@@ -15,6 +15,16 @@ fs.readFile('./data.txt', 'utf-8',function(err,data){
 	if(err){
 		throw err
 	}else{
+		//console.log(Buffer.from(data,"utf-8"))
+		console.log(Buffer.from(data.toString("utf-8")))
+		
+	}
+})
+//二进制格式
+fs.readFile('./sample.png',function(err,data){
+	if(err){
+		throw err
+	}else{
 		console.log(data)
 	}
 })
