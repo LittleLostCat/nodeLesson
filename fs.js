@@ -1,5 +1,4 @@
-var fs = require('fs')
-
+var fs = require('fs');
 //写入文件
 //arguments:路径，写入数据，回调函数
 // fs.writeFile('./data.txt','hello world',function(err){
@@ -28,3 +27,11 @@ fs.readFile('./sample.png',function(err,data){
 		console.log(data)
 	}
 })
+
+var http = require('http');
+http.createServer(function(req,res){
+	res.writeHead(200,{'Content-Type':'text/plain'});
+	res.end('Hello World\n');
+	console.log(2333)
+}).listen(1337,'127.0.0.1');
+
