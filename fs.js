@@ -16,7 +16,6 @@ fs.readFile('./data.txt', 'utf-8',function(err,data){
 	}else{
 		//console.log(Buffer.from(data,"utf-8"))
 		console.log(Buffer.from(data.toString("utf-8")))
-		
 	}
 })
 //二进制格式
